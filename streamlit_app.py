@@ -1,6 +1,6 @@
 # streamlit_app.py
 
-from scripts.data_fetcher import fetch_fred_data, fetch_stock_data
+from data_fetcher import fetch_fred_data, fetch_stock_data
 import streamlit as st
 import pandas as pd
 import numpy as np
