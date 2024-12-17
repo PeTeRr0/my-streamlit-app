@@ -1,6 +1,5 @@
 # streamlit_app.py
 
-from data_fetcher import fetch_fred_data, fetch_stock_data
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -8,9 +7,10 @@ import joblib
 import os
 from datetime import datetime, timedelta
 
-from scripts.data_fetcher import fetch_fred_data, fetch_stock_data
-from scripts.data_preprocessor import merge_datasets, preprocess_data
-from scripts.model import predict_crisis
+from data_fetcher import fetch_fred_data, fetch_stock_data
+from data_preprocessor import merge_datasets, preprocess_data
+from model import predict_crisis
+
 
 MODEL_PATH = os.path.join("data", "models", "random_forest_model.pkl")
 
